@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Endless Computing</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html"><img src="images/logo.png" alt="Endless Computing" class="logo"></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <h2>Contact Us</h2>
+    <p>Get in touch for quotes and inquiries</p>
+  </div>
+
+  <section class="content-section">
+    <div class="contact-form">
+      <form action="mailto:endlesscomputingtz@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      
+      <div style="margin-top: 30px; text-align: center;">
+        <h3>Direct Contact</h3>
+        <p><strong>Email:</strong> endlesscomputingtz@gmail.com</p>
+	<p><strong>Phone:</strong> (+255) 0624 499 245</p>
+        <p><strong>Location:</strong> Dodoma, Tanzania</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Endless Computing. All rights reserved.</p>
+</footer>
+
+<div id="chatbot">
+  <div id="chat-header">Chat with us</div>
+  <div id="chat-body"></div>
+  <input type="text" id="chat-input" placeholder="Type a message...">
+</div>
+
+<script src="js/chatbot.js"></script>
+</body>
+</html>
